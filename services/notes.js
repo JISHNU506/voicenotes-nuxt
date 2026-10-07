@@ -15,7 +15,13 @@ export async function getNote(slug) {
     title: note.title,
     author: note.user_name,
     authorImage: note.user_image,
-    date: note.recorded_at,
+    date: new Date(note.recorded_at).toLocaleString('en-GB', {
+      weekday: 'short',
+      day: 'numeric',
+      month: 'short',
+      hour: '2-digit',
+      minute: '2-digit',
+    }),
     transcript: note.transcript,
   }
 }

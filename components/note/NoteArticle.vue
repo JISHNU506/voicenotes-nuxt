@@ -6,12 +6,15 @@ defineProps(['note'])
   <article>
     <h1 class="text-title font-semibold">{{ note.title }}</h1>
 
-    <div class="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 font-system text-label font-medium">
-      <BaseAvatar :src="note.authorImage" :alt="note.author" size="sm">{{ note.author.charAt(0) }}</BaseAvatar>
-      <span class="text-black">{{ note.author }}</span>
-      <span class="ml-2 text-muted">{{ note.date }}</span>
+    <div class="mt-3 flex items-center gap-3 font-system">
+      <BaseAvatar :src="note.authorImage" :alt="note.author">{{ note.author.charAt(0) }}</BaseAvatar>
+
+      <div>
+        <p class="text-label font-medium text-black">{{ note.author }}</p>
+        <p class="mt-0.5 text-xs text-muted">{{ note.date }}</p>
+      </div>
     </div>
 
-    <p class="mt-3 text-body" v-html="note.transcript" />
+    <p class="mt-4 text-body" v-html="note.transcript" />
   </article>
 </template>

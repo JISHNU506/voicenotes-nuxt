@@ -2,6 +2,8 @@ import axios from 'axios'
 
 const API_URL = 'https://api.voicenotes.com/api'
 
+export const noteSlugs = ['iS9L44', 'Apb3rK']
+
 export async function getNote(slug) {
   const response = await axios.get(`${API_URL}/public/recordings/${slug}`, {
     params: { segments: true },

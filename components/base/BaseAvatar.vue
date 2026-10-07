@@ -4,7 +4,7 @@ defineProps(['src', 'alt'])
 
 <template>
   <span class="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border">
-    <img v-if="src" :src="src" :alt="alt">
+    <img v-if="src" :src="src" :alt="alt" class="h-full w-full object-cover">
     <slot v-else />
   </span>
 </template>

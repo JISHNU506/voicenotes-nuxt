@@ -1,4 +1,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/ui'],
+  css: ['~/assets/css/main.css'],
+  ui: {
+    colorMode: false,
+  },
+  app: {
+    head: {
+      title: 'Voicenotes',
+    },
+  },
 })

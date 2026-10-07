@@ -4,14 +4,14 @@ defineProps(['note'])
 
 <template>
   <article>
-    <h1 class="text-2xl font-semibold tracking-tight">{{ note.title }}</h1>
+    <h1 class="text-title font-semibold">{{ note.title }}</h1>
 
-    <div class="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+    <div class="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 font-system text-label font-medium">
       <BaseAvatar :src="note.authorImage" :alt="note.author" size="sm">{{ note.author.charAt(0) }}</BaseAvatar>
-      <span class="font-medium">{{ note.author }}</span>
-      <span class="ml-2 text-neutral-500">{{ note.date }}</span>
+      <span class="text-black">{{ note.author }}</span>
+      <span class="ml-2 text-muted">{{ note.date }}</span>
     </div>
 
-    <p class="mt-4 text-[15px] leading-7 text-neutral-800" v-html="note.transcript" />
+    <p class="mt-3 text-body" v-html="note.transcript" />
   </article>
 </template>

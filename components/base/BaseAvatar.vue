@@ -2,8 +2,8 @@
 const { src, alt, size = 'md' } = defineProps(['src', 'alt', 'size'])
 
 const sizes = {
-  sm: 'h-5 w-5 text-[10px]',
-  md: 'h-9 w-9 text-sm',
+  sm: 'h-4 w-4 text-xs',
+  md: 'h-10 w-10 text-sm',
 }
 </script>
 

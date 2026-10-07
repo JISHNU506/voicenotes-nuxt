@@ -9,8 +9,8 @@ const draft = ref('')
 </script>
 
 <template>
-  <aside class="flex h-full flex-col rounded-2xl bg-neutral-100 p-4">
-    <h2 class="font-semibold">Ask AI</h2>
+  <aside class="flex h-full flex-col rounded-2xl bg-panel p-4">
+    <h2 class="text-sm font-semibold">Ask AI</h2>
 
     <div class="mt-4 flex-1 space-y-4 overflow-y-auto">
       <AskAiMessage
@@ -20,7 +20,7 @@ const draft = ref('')
       />
     </div>
 
-    <div class="mt-4 flex flex-wrap gap-2">
+    <div class="mt-4 flex flex-wrap gap-3">
       <BaseButton
         v-for="suggestion in suggestions"
         :key="suggestion"
@@ -30,6 +30,6 @@ const draft = ref('')
       </BaseButton>
     </div>
 
-    <AskAiInput v-model="draft" class="mt-3" />
+    <AskAiInput v-model="draft" class="mt-2" />
   </aside>
 </template>

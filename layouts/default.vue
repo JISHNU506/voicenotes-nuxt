@@ -4,13 +4,13 @@ const isAskAiOpen = ref(false)
 
 <template>
   <div class="min-h-screen bg-white text-ink lg:flex">
-    <div class="flex-1 px-4 pb-24 pt-5 sm:px-8 lg:pb-5">
-      <header class="flex items-center justify-between">
+    <div class="flex-1 px-4 pb-24 sm:px-8 lg:pb-5">
+      <header class="sticky top-0 z-20 flex items-center justify-between bg-white pb-3 pt-5">
         <AppLogo />
         <NoteNavigation />
       </header>
 
-      <main class="mx-auto mt-6 max-w-note">
+      <main class="mx-auto mt-3 max-w-note">
         <slot />
       </main>
     </div>

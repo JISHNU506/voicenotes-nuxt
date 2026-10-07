@@ -10,6 +10,7 @@ const variants = {
 const sizes = {
   md: 'gap-2.5 px-3 py-2 text-label font-semibold text-black',
   icon: 'h-6 w-6',
+  large: 'h-12 w-12',
 }
 </script>
 

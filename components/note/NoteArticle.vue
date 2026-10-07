@@ -12,8 +12,6 @@ defineProps(['note'])
       <span>{{ note.date }}</span>
     </div>
 
-    <p v-for="(paragraph, index) in note.paragraphs" :key="index" class="mt-4">
-      {{ paragraph }}
-    </p>
+    <p class="mt-4">{{ note.transcript }}</p>
   </article>
 </template>

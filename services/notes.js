@@ -13,24 +13,7 @@ export async function getNote(slug) {
     title: note.title,
     author: note.user_name,
     authorImage: note.user_image,
-    date: formatDate(note.recorded_at),
-    paragraphs: splitParagraphs(note.transcript),
+    date: note.recorded_at,
+    transcript: note.transcript,
   }
-}
-
-function splitParagraphs(transcript) {
-  return transcript
-    .split(/\u2028|<br>/)
-    .map((paragraph) => paragraph.trim())
-    .filter((paragraph) => paragraph)
-}
-
-function formatDate(date) {
-  return new Date(date).toLocaleString('en-GB', {
-    weekday: 'short',
-    day: 'numeric',
-    month: 'short',
-    hour: '2-digit',
-    minute: '2-digit',
-  })
 }

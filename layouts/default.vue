@@ -33,7 +33,7 @@ const isAskAiOpen = ref(false)
       variant="ghost"
       size="large"
       aria-label="Open Ask AI"
-      class="fixed bottom-5 right-5 z-30 bg-white shadow-input lg:hidden"
+      class="fixed bottom-5 left-5 z-30 bg-white shadow-input lg:hidden"
       @click="isAskAiOpen = true"
     >
       <IconLogo class="h-6 w-6" />

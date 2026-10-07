@@ -21,15 +21,13 @@ const draft = ref('')
     </div>
 
     <div class="mt-4 flex flex-wrap gap-2">
-      <UButton
+      <BaseButton
         v-for="suggestion in suggestions"
         :key="suggestion"
-        :label="suggestion"
-        color="neutral"
-        variant="soft"
-        class="bg-neutral-200"
         @click="draft = suggestion"
-      />
+      >
+        {{ suggestion }}
+      </BaseButton>
     </div>
 
     <AskAiInput v-model="draft" class="mt-3" />

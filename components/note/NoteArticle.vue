@@ -7,7 +7,7 @@ defineProps(['note'])
     <h1 class="text-2xl font-semibold tracking-tight">{{ note.title }}</h1>
 
     <div class="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
-      <UAvatar :src="note.authorImage" :alt="note.author" size="2xs" />
+      <BaseAvatar :src="note.authorImage" :alt="note.author" size="sm">{{ note.author.charAt(0) }}</BaseAvatar>
       <span class="font-medium">{{ note.author }}</span>
       <span class="ml-2 text-neutral-500">{{ note.date }}</span>
     </div>

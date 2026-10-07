@@ -1,23 +1,24 @@
 export default {
   theme: {
     extend: {
-      // Design tokens. Placeholder values until they're synced with the Figma file —
-      // change them here and every base component picks up the new look.
+      // Design tokens, picked from the design screenshot.
+      // Fine-tune them with the exact Figma values later — every component updates from here.
       colors: {
         ink: {
-          DEFAULT: '#171717', // main text
-          muted: '#737373', // secondary text, icons
-          subtle: '#a3a3a3', // placeholders, hints
+          DEFAULT: '#111111', // main text
+          muted: '#6b6b6b', // secondary text (dates), icons
+          subtle: '#9e9e9e', // placeholders
         },
         surface: {
-          DEFAULT: '#ffffff', // page / card background
-          muted: '#f5f5f5', // hover, subtle fills
+          DEFAULT: '#ffffff', // page background, input box
+          muted: '#f7f7f7', // Ask AI panel background, hovers
+          strong: '#ebebeb', // chat bubble, suggestion chips
         },
-        line: '#e5e5e5', // borders and dividers
+        line: '#e5e5e5', // borders
         accent: {
-          DEFAULT: '#6d28d9',
-          hover: '#5b21b6',
-          soft: '#ede9fe',
+          DEFAULT: '#111111', // primary buttons, send button
+          hover: '#333333',
+          soft: '#ebebeb',
         },
       },
     },

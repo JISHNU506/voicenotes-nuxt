@@ -12,10 +12,15 @@ const message = defineModel()
 
     <div class="flex justify-end gap-2">
       <BaseIconButton label="Record voice">
-        <IconMic class="h-4 w-4" />
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <rect x="9" y="3" width="6" height="11" rx="3" />
+          <path d="M5 11a7 7 0 0 0 14 0M12 18v3" />
+        </svg>
       </BaseIconButton>
       <BaseIconButton label="Send">
-        <IconArrowUp class="h-4 w-4" />
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
       </BaseIconButton>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  note: { type: Object, required: true }, // { title, author, date, paragraphs }
+  note: { type: Object, required: true },
 })
 </script>
 
@@ -14,7 +14,6 @@ defineProps({
       <span>{{ note.date }}</span>
     </div>
 
-    <!-- v-for is Vue's .map(), and :key works like React's key -->
     <p v-for="(paragraph, index) in note.paragraphs" :key="index" class="mt-4">
       {{ paragraph }}
     </p>

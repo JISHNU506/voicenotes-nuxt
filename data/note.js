@@ -1,4 +1,3 @@
-// Sample note from the design, used until notes come from an API
 export const note = {
   title: 'Voice Command Editing for Notes',
   author: 'Jijo Sunny',

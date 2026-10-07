@@ -12,6 +12,6 @@ defineProps(['note'])
       <span>{{ note.date }}</span>
     </div>
 
-    <p class="mt-4">{{ note.transcript }}</p>
+    <p class="mt-4" v-html="note.transcript" />
   </article>
 </template>

@@ -1,7 +1,5 @@
 <script setup>
-defineProps({
-  label: { type: String, required: true },
-})
+defineProps(['label'])
 </script>
 
 <template>

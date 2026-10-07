@@ -1,12 +1,11 @@
 <script setup>
-const message = defineModel({ type: String, default: '' })
+const message = defineModel()
 </script>
 
 <template>
   <div>
     <textarea
       v-model="message"
-      rows="2"
       placeholder="Enter your change"
       class="w-full border p-2"
     />

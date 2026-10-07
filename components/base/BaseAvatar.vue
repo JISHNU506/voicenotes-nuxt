@@ -1,8 +1,5 @@
 <script setup>
-defineProps({
-  src: { type: String, default: '' },
-  alt: { type: String, default: '' },
-})
+defineProps(['src', 'alt'])
 </script>
 
 <template>

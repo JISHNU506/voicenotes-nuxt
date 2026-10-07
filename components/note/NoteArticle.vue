@@ -1,7 +1,5 @@
 <script setup>
-defineProps({
-  note: { type: Object, required: true },
-})
+defineProps(['note'])
 </script>
 
 <template>
